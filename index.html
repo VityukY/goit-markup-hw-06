@@ -414,12 +414,15 @@
 						<form class="form-field">
 							<input type="email" placeholder="E-mail" />
 						</form>
-						<button class="button subs">подписаться</button>
+						<button class="button subs">
+							<span>подписаться</span>
+							<svg width="24" height="24" class="subs-icon">
+								<use href="./img-origin/symbol-defs-optimize.svg#icon-icon-send" class="icon"></use>
+							</svg>
+						</button>
 					</div>
 				</div>
 			</div>
-
-			<!--ТУТ место для "подписатся сейчас"  -->
 		</footer>
 		<div class="modal is-hidden" data-modal>
 			<div class="modal-inbox">
@@ -460,12 +463,15 @@
 					</div>
 
 					<label class="chek">
-						<input type="checkbox" name="confirm" class="form-input" />
+						<input type="checkbox" name="confirm" class="chek-input" />
+						<svg width="16" height="15" class="icon-chek">
+							<use href="./img-origin/symbol-defs-optimize.svg#icon-icon-chek" class="icon"></use>
+						</svg>
 						Соглашаюсь с рассылкой и принимаю
 						<a href="">Условия договора</a>
 					</label>
 
-					<button type="submit" class="button">отправить</button>
+					<button type="submit" class="button">Отправить</button>
 				</form>
 			</div>
 		</div>

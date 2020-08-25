@@ -519,7 +519,25 @@ li {
 .subscribe .subscribe-inbox {
 	display: flex;
 }
+.subscribe .button {
+	display: flex;
+	justify-content: center;
 
+	/*position: relative;*/
+}
+.subscribe .button:hover {
+	background-color: #188ce8;
+	color: var(--text-white-color);
+}
+.subscribe .subs-icon {
+	/*position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 28px;*/
+}
+.subs span {
+	margin-right: 10px;
+}
 /* ПОРТФОЛИО */
 
 /*портфолио фильтры*/
@@ -692,6 +710,7 @@ li {
 
 .modal .btn-close {
 	position: absolute;
+	background-color: #fff;
 }
 .modal .form-field input {
 	margin: 0px;
@@ -783,6 +802,9 @@ textarea {
 	right: 8px;
 }
 .modal .chek {
+	display: flex;
+	align-items: center;
+
 	font-family: Roboto;
 	font-weight: 400;
 	font-size: 14px;
@@ -790,13 +812,19 @@ textarea {
 	color: var(--secondary-text-color);
 	text-decoration: none;
 }
-.chek .form-input:checked {
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-
-	position: absolute;
+.modal .chek-input:checked + .icon-chek {
+	background: #2196f3;
+	border: 1px solid var(--acent-text-color);
+	border-radius: 2px;
+}
+.modal .icon-chek {
+	border: 1px solid var(--secondary-text-color);
+	margin-right: 7px;
+	border-radius: 2px;
 }
 .modal a {
 	color: var(--acent-text-color);
+}
+.chek .chek-input {
+	appearance: none;
 }
